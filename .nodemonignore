@@ -1,0 +1,9 @@
+.git
+.svn
+.idea
+.tmp
+docs
+logs
+coverage
+node_modules
+~references

@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var path        = require('path');
+var app         = require('onestack');
+var Server      = require('onestack-service');
+
+var instance    = new Server(app);
+
+instance.init(path.join(__dirname, '..'));
+instance.start();

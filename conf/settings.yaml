@@ -1,0 +1,13 @@
+---
+# application info
+ID: ONE
+TITLE: OneStack Enterprise Service Platform
+
+# PaaS will always set the PORT environment variable
+PORT: 11020
+
+# Explorer will display the tagged services under this url
+EXPLORE_SERVICE_BASE: /api/v1
+
+# relative path to HOME_DIR
+LOG_DIR: ./logs
