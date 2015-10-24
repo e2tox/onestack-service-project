@@ -1,34 +1,22 @@
 {
-  "name": "onestack-sample",
+  "name": "onestack-service-project",
   "description": "OneStack Enterprise Service Platform",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:AppInsight/Bestinet.git"
+    "url": "git@github.com:e2tox/onestack-service-project.git"
   },
   "engines": {
-    "node": ">=0.10.x"
+    "node": ">=4.2.1",
+    "npm": ">=2.14.7"
   },
   "scripts": {
     "test": "node_modules/grunt-cli/bin/grunt teamcity",
     "test-on-travis": "./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/_mocha && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
-    "async": "^0.9.0",
-    "bluebird": "^2.9.14",
-    "handlebars": "^3.0.0",
-    "hoek": "^2.12.0",
-    "influx": "^3.3.0",
-    "joi": "^6.0.8",
-    "lodash": "^3.5.0",
-    "moment": "^2.9.0",
-    "mysql": "^2.6.2",
-    "native-dns": "^0.7.0",
-    "onestack": "^1.2.0",
-    "onestack-service": "git+ssh://git@bitbucket.org:onestack/service.git#master",
-    "request": "^2.53.0",
-    "uuid": "^2.0.1",
-    "winston": "^0.9.0"
+    "onestack": "^2.0.0",
+    "onestack-service": "^2.0.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.2",

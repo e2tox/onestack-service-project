@@ -5,27 +5,16 @@
  * Module dependencies.
  */
 
-var _           = require('lodash'),
-    app         = require('onestack'),
-
-    internals   = {};
-
-
-module.exports = function (server, boom) {
-
-
+module.exports = function (server) {
     server.route({
         method: 'POST',
-        path: '/api/v1/hello',
+        path: '/api/v1/engine',
         handler: function (request, reply) {
-            reply('welcome').code(200);
+            reply('hi, there');
         },
         config: {
             description: 'Start engine',
             tags: ['Business Process Engine']
         }
     });
-
-
-
 };
